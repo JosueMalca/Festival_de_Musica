@@ -1,0 +1,18 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.sobre-festival{
+    @include m.contenedor;
+    @include m.desktop
+    {
+        @include m.grid(2);
+    }
+        
+    .fecha{
+        color: v.$verde;
+        font-weight: 700;
+    }
+}
+.contenido-festival{
+    margin-top: 4rem;
+}
